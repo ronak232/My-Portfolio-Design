@@ -5,9 +5,6 @@ const Homepage = () => {
   const textAnimation1 = useRef(null);
   const textAnimation2 = useRef(null);
 
-  const fadeImageFirst = useRef(null);
-  const fadeImagesSecond = useRef(null);
-
   const animateText = () => {
     const tl = gsap.timeline({ defaults: { stagger: 0.5 } });
     tl.to(textAnimation1.current, {

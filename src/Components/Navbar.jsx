@@ -16,7 +16,7 @@ function Navbar() {
             animate={{ opacity: 1, scale: 1.1 }}
             transition={{ duration: 0.9 }}
           >
-            <span>Dev</span>
+            <a className="" href="#"><img src="./images/logo.png" alt="" width={30} height={30}/></a>
           </motion.a>
           <div className="flex gap-2 w-full justify-center">
             <button className="">

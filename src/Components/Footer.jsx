@@ -24,7 +24,7 @@ const PortfolioFooter = () => {
                 height={35}
               />
             </a>
-            <a href="#">
+            <a href="https://github.com/ronak232" target="_blank">
               <img
                 className="object-cover w-100"
                 src="./images/github.svg"

@@ -165,10 +165,10 @@ const MyPortfolio = () => {
         {/* Work */}
         <div className="work mt-5">
           <h1 className="py-7">Portfolio</h1>
-          <div className="flex justify-between md:flex-nowrap flex-wrap m-auto gap-4">
+          <div className="flex justify-between md:flex-nowrap flex-wrap m-auto gap-6 sm:gap-4">
             {data.portfolio.map((item) => {
               return (
-                <div className="flex flex-col border-1 shadow-lg shadow-slate-400 rounded-2xl max-h-[460px] gap-4">
+                <div className="flex flex-col border-1 shadow-lg shadow-slate-300 rounded-2xl max-h-[460px] gap-4">
                   <div className="first h-full w-full max-w-[350px] max-h-[480px] cursor-pointer">
                     <img
                       className="w-full border-b-100 h-full"
