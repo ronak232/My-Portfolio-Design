@@ -26,14 +26,13 @@ const ExperienceSection = () => {
   }, []);
 
   return (
-    <div className="exp-banner py-[2rem]">
+    <div className="exp-banner my-[4rem]">
       <div className="container h-full">
         <div className="flex flex-col items-center m-auto">
-          <div className="w-full text-left">
-            <h1 className="gradient-text md:text-5xl text-3xl text-left font-bold pb-6">
-              Experience
-            </h1>
-          </div>
+          {/* <h1 className="gradient-text md:text-5xl text-3xl text-center font-bold my-6">
+            Experience
+          </h1> */}
+
           <p
             ref={animatedDescription}
             className={` text-gray-400 font-bold font-mono py-4 ${

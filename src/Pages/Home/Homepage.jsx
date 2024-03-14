@@ -38,7 +38,7 @@ const Homepage = () => {
           <div className="relative h-[70px] overflow-hidden w-full">
             <h1
               ref={textAnimation1}
-              className="text-[2rem] md:text-[2.2rem] text-white absolute leading-[2rem] "
+              className="text-[2rem] md:text-[2.2rem] text-white absolute top-0 left-0 leading-[2rem]"
             >
               Hello!
               <span className="font-bold text-green-400 text-[1.2rem] md:text-[3rem] ps-2">
@@ -49,7 +49,7 @@ const Homepage = () => {
           <div className="relative overflow-hidden h-[110px] leading-10 md:h-[85px] w-full">
             <h1
               ref={textAnimation2}
-              className="text-[1.8rem] md:text-[2.5rem] text-white absolute"
+              className="text-[1.8rem] md:text-[2.5rem] text-white absolute top-0 left-0"
             >
               Front-End and UI Developer
             </h1>
