@@ -1,0 +1,55 @@
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../../images/hero-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom: 5px solid #ff4500;
+  &__banner {
+    height: 100%;
+    position: relative;
+  }
+
+  &__images {
+    .img1 {
+      position: absolute;
+      top: 10%;
+      right: 50%;
+      max-width: 270px;
+      max-height: 320px;
+      border: 0.6 solid ghostwhite;
+      border-radius: 4px;
+    }
+    .img2 {
+      position: absolute;
+      top: 50%;
+      right: 0%;
+      max-width: 270px;
+      max-height: 320px;
+      border: 0.6 solid ghostwhite;
+      border-radius: 4px;
+    }
+  }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(-20px); /* Adjust this value for desired reveal effect */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+// Experience css
+
+.exp-banner{
+
+}
+
+.gradient-text {
+  -webkit-background-clip: text;
+  @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent; // with @apply we can use the tailwind css utility class in css file.
+}

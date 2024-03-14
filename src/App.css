@@ -1,0 +1,16 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background: #0000;
+  color: whitesmoke;
+  scroll-behavior: smooth !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

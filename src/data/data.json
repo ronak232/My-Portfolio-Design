@@ -1,0 +1,56 @@
+{
+  "images": [
+    {
+      "id": "0",
+      "img": "https://picsum.photos/200/300.webp",
+      "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do temporincididuntut Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,"
+    },
+    {
+      "id": "1",
+      "img": "https://picsum.photos/200/300.webp",
+      "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do temporincididuntut Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,"
+    },
+    {
+      "id": "2",
+      "img": "https://picsum.photos/200/300.webp",
+      "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do temporincididuntut Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,"
+    }
+  ],
+  "services": [
+    {
+      "id": "0",
+      "img": "https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=996&t=st=1710350665~exp=1710351265~hmac=d434b93072b7ef473ffa18057a63c3304a44554c3a819797064edd35526c64b5",
+      "des": "Architecting the web's future, pixel by pixel, with passion and precision."
+    },
+    {
+      "id": "1",
+      "img": "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051555.jpg?w=996&t=st=1710350822~exp=1710351422~hmac=de79e90bef00db9cc1687d0211b2cebec6c9f03416b773d41103d671e78c247e",
+      "des": "Transforming designs into seamless user experiences with expert UI development."
+    },
+    {
+      "id": "2",
+      "img": "https://uploads-ssl.webflow.com/615af81f65d1ab72d2969269/62efdf9840dca733692cdd48_web%20dev%20basics.jpg",
+      "des": "Crafting captivating websites and intuitive UI designs for engaging user experiences"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "0",
+      "img": "https://www.blurb.com/blog/wp-content/uploads/2019/03/20190104_JanBlog_1920x1080_v1-header.jpg",
+      "link": "https://github.com/ronak232/Ecommerce-app",
+      "desc": "E-comm Website"
+    },
+    {
+      "id": "1",
+      "img": "https://miro.medium.com/v2/resize:fit:1400/1*tIgqtf63Uto2pju937DVTA.jpeg",
+      "link":"https://github.com/ronak232/bootstrap-react-app",
+      "desc": "Any Website"
+    },
+    {
+      "id": "2",
+      "img": "https://miro.medium.com/v2/resize:fit:1400/1*bU3ELlwhoUWYDshTEMhuKQ.jpeg",
+      "link": "https://github.com/ronak232/Small-React-Projects",
+      "desc": "My Small React Js Projects"
+    }
+  ]
+}
