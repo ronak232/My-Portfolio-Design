@@ -81,34 +81,34 @@ const MyPortfolio = () => {
             <div ref={imageSlideIn} className="-translate-y-[500px] opacity-0">
               <div className="flex justify-between items-center w-full">
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] sm:max-w-[90px] lg:max-w-full"
                   src="./images/icons/css-icon.png"
                   alt=""
                 />
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] sm:max-w-[90px] lg:max-w-full"
                   src="./images/icons/html-icon.png"
                   alt=""
                 />
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] sm:max-w-[90px] lg:max-w-full"
                   src="./images/icons/js-icon.png"
                   alt=""
                 />
               </div>
               <div className="flex justify-between items-center">
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] sm:max-w-[90px] lg:max-w-full"
                   src="./images/icons/react-icon.png"
                   alt=""
                 />
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] sm:max-w-[90px] lg:max-w-full"
                   src="./images/icons/figma-icon.png"
                   alt=""
                 />
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] sm:max-w-[90px] lg:max-w-full"
                   src="./images/icons/redux-icon.png"
                   alt=""
                 />
@@ -118,7 +118,7 @@ const MyPortfolio = () => {
         </div>
 
         <div className="services relative py-5">
-          <h1 className="text-[3.2rem] py-[3rem] text-center">Service!</h1>
+          <h1 className="text-[1.8rem] py-[3rem] text-left">Service!</h1>
 
           <BsArrowRightCircle
             className="right-arrow cursor-pointer absolute text-black text-[34px] lg:right-[17.5rem] right-0 md:top-[22rem] top-[15rem] rounded-2xl bg-white border-none"
@@ -134,12 +134,12 @@ const MyPortfolio = () => {
                 <div
                   className={
                     currentSlideIndex === parseInt(item.id)
-                      ? "max-w-[700px] max-h-[600px] border-1 shadow-slate-200 shadow-lg rounded-2xl transition-all ease-in-out active"
+                      ? "max-w-[550px] max-h-[600px] border-1 shadow-slate-200 shadow-lg rounded-2xl transition-all ease-in-out bg-[#da8ff38f] active"
                       : "hidden"
                   }
                   key={item.id}
                 >
-                  <img className="w-full" src={item.img} alt="some image" />
+                  <img className="w-full rounded-t-lg" src={item.img} alt="some image" />
                   <p className="py-4 px-3">{item.des}</p>
                 </div>
               );
@@ -164,14 +164,14 @@ const MyPortfolio = () => {
 
         {/* Work */}
         <div className="work mt-5">
-          <h1 className="py-7">Portfolio</h1>
-          <div className="flex justify-between md:flex-nowrap flex-wrap m-auto gap-6 sm:gap-4">
+          <h1 className="py-7 text-[1.8rem]">Portfolio</h1>
+          <div className="flex justify-center sm:justify-between sm:flex-nowrap flex-wrap m-auto gap-6 sm:gap-4">
             {data.portfolio.map((item) => {
               return (
-                <div className="flex flex-col border-1 shadow-lg shadow-slate-300 rounded-2xl max-h-[460px] gap-4">
+                <div className="flex flex-col border-1 shadow-lg shadow-slate-400 rounded-2xl max-h-[460px] gap-4">
                   <div className="first h-full w-full max-w-[350px] max-h-[480px] cursor-pointer">
                     <img
-                      className="w-full border-b-100 h-full"
+                      className="w-full border-b-100 rounded-t-lg h-full"
                       src={item.img}
                       alt=""
                     />

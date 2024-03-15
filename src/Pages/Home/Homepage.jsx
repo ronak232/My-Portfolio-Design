@@ -7,15 +7,15 @@ const Homepage = () => {
 
   const animateText = () => {
     const tl = gsap.timeline({ defaults: { stagger: 0.5 } });
-    tl.to(textAnimation1.current, {
+    tl.from(textAnimation1.current, {
       duration: 1,
-      y: 0,
+      y: 100,
       delay: 0.5,
       ease: "power4.out",
     })
-      .to(textAnimation2.current, {
+      .from(textAnimation2.current, {
         duration: 1,
-        y: 0,
+        y: 100,
         delay: 0.5,
         ease: "power4.out",
       })

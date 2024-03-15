@@ -33,9 +33,18 @@
     }
   }
 }
+
+.portfolio{
+  background: linear-gradient(180deg, #8bc6ff, #ffffff);
+  height: 100%;
+  border-top: 5px solid orangered;
+  border-bottom: 5px solid orangered;
+}
+
+
 .reveal {
   opacity: 0;
-  transform: translateY(-20px); /* Adjust this value for desired reveal effect */
+  transform: translateY(20px); /* Adjust this value for desired reveal effect */
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -46,10 +55,7 @@
 // Experience css
 
 .exp-banner{
-  background: url(../../public/images/bg-dark.jpg) center no-repeat fixed;
-  height: 100vh;
-  border-top: 5px solid orangered;
-  border-bottom: 5px solid orangered;
+  
 }
 
 .gradient-text {

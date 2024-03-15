@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
       <SiderbarMenu />
-      <nav className="top-0 left-0 right-0 z-2 w-full bg-transparent py-4">
+      <nav className="z-2 w-full bg-transparent py-2">
         <div className="container flex items-center justify-between py-[0.5rem] px-[1rem]">
           <motion.a
             className="h-auto w-full flex items-center justify-center"
