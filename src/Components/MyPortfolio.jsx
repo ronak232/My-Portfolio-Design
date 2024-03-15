@@ -55,7 +55,7 @@ const MyPortfolio = () => {
   return (
     <div className="portfolio py-18 h-full">
       <div className="container py-7">
-        <h1 className="text-[2.8rem] py-[20px]">About Me...</h1>
+        <h1 className="text-[1.8rem] py-[20px]">About Me...</h1>
         <div
           className="flex flex-col md:flex-row gap-5 my-[50px] overflow-hidden"
           data-speed="0.5"
