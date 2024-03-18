@@ -13,10 +13,7 @@ function App() {
       <Homepage/>
       <MyPortfolio/>
       <ExperienceSection/>
-      <Testimonials/>
-      {/* <section className="h-screen" id="testimonial">Testimonial</section> */}
-      {/* <section className="h-screen" id="about">About</section> */}
-      {/* <section className="h-screen" id="portfolio">Contact</section> */}
+      {/* <Testimonials/> */}
       <PortfolioFooter/>
     </>
   );

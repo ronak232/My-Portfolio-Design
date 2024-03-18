@@ -2,7 +2,7 @@ import React from "react";
 
 const PortfolioFooter = () => {
   return (
-    <footer className="h-full mt-10 p-[3.4rem] w-full bg-slate-700 text-white">
+    <footer className="h-full p-[3.4rem] w-full bg-slate-700 text-white">
       <div className="logo">
         <img src="" alt="" />
       </div>

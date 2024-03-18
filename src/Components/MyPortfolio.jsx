@@ -53,9 +53,9 @@ const MyPortfolio = () => {
   };
 
   return (
-    <div className="portfolio py-18 h-full">
-      <div className="container py-7">
-        <h1 className="text-[1.8rem] py-[20px]">About Me...</h1>
+    <div className="portfolio py-16 h-full">
+      <div className="container">
+        <h1 className="gradient-text text-[2.2rem]">About Me...</h1>
         <div
           className="flex flex-col md:flex-row gap-5 my-[50px] overflow-hidden"
           data-speed="0.5"
@@ -118,7 +118,7 @@ const MyPortfolio = () => {
         </div>
 
         <div className="services relative py-5">
-          <h1 className="text-[3.2rem] py-[3rem] text-center">Service!</h1>
+          <h1 className="gradient-text text-[2.2rem] pb-2">Service!</h1>
 
           <BsArrowRightCircle
             className="right-arrow cursor-pointer absolute text-black text-[34px] lg:right-[17.5rem] right-0 md:top-[22rem] top-[15rem] rounded-2xl bg-white border-none"
@@ -164,7 +164,7 @@ const MyPortfolio = () => {
 
         {/* Work */}
         <div className="work mt-5">
-          <h1 className="py-7">Portfolio</h1>
+          <h1 className="gradient-text py-7 text-[2.2rem]">Portfolio</h1>
           <div className="flex justify-between md:flex-nowrap flex-wrap m-auto gap-6 sm:gap-4">
             {data.portfolio.map((item) => {
               return (

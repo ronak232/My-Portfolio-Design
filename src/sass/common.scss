@@ -33,23 +33,11 @@
     }
   }
 }
-.reveal {
-  opacity: 0;
-  transform: translateY(-20px); /* Adjust this value for desired reveal effect */
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
 
-.reveal.is-revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
 // Experience css
-
-.exp-banner{
-  background: url(../../public/images/bg-dark.jpg) center no-repeat fixed;
-  height: 100vh;
+.exp-banner {
+  height: 100%;
   border-top: 5px solid orangered;
-  border-bottom: 5px solid orangered;
 }
 
 .gradient-text {
