@@ -12,8 +12,7 @@ const PortfolioFooter = () => {
       <div className=" mt-6"></div>
       <div></div>
       <div className="social-icons flex items-center md:justify-between justify-center w-full flex-col md:flex-row py-6 md:items-center">
-        {/* <div className="flex items-center flex-col justify-center gap-3"> */}
-          <p className="date text-[1rem]">Created in @ 2024</p>
+          <p className="date text-[1rem]">Created in 2024</p>
           <div className="flex gap-3">
             <a href="#">
               <img

@@ -46,6 +46,10 @@ export default {
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
         montserrat: "var(--font-montserrat)",
+        basic: "var(--font-basic)"
+      },
+      boxShadow:{
+        cs:"0px 0px 24px rgba(0,0,0,0.15)"
       },
       letterSpacing: {
         tagline: ".15em",

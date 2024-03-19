@@ -55,17 +55,17 @@ const MyPortfolio = () => {
   return (
     <div className="portfolio py-16 h-full">
       <div className="container">
-        <h1 className="gradient-text text-[2.2rem]">About Me...</h1>
+        <h1 className="gradient-text text-[2.2rem] pb-4">About Me...</h1>
         <div
-          className="flex flex-col md:flex-row gap-5 my-[50px] overflow-hidden"
+          className="flex flex-col md:flex-row gap-5 my-[30px] overflow-hidden"
           data-speed="0.5"
         >
           <p
             ref={revealText}
-            className="w-full font-medium leading-[1.6rem] opacity-0 -translate-x-[650px]"
+            className="w-full font-light font-basic leading-[30px] opacity-0 -translate-x-[650px]"
           >
             Welcome to my portfolio!
-            <span className="text-[1.5rem] text-cyan-700">
+            <span className="text-[1.5rem] text-cyan-700 ps-1 font-basic">
               I'm Ronak Mathur
             </span>
             , a passionate frontend developer dedicated to crafting exceptional
@@ -78,37 +78,37 @@ const MyPortfolio = () => {
             realm.
           </p>
           <div className="tech-stack w-full overflow-hidden">
-            <div ref={imageSlideIn} className="-translate-y-[500px] opacity-0">
-              <div className="flex justify-between items-center w-full">
+            <div ref={imageSlideIn} className="flex flex-col -translate-y-[500px] opacity-0">
+              <div className="flex justify-between items-center w-full p-2">
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] border-2 rounded-full shadow-lg p-5"
                   src="./images/icons/css-icon.png"
                   alt=""
                 />
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] border-2 rounded-full shadow-lg p-5"
                   src="./images/icons/html-icon.png"
                   alt=""
                 />
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] border-2 rounded-full shadow-lg p-5"
                   src="./images/icons/js-icon.png"
                   alt=""
                 />
               </div>
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center w-full p-2">
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] border-2 rounded-full shadow-lg p-5"
                   src="./images/icons/react-icon.png"
                   alt=""
                 />
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] border-2 rounded-full shadow-lg p-5"
                   src="./images/icons/figma-icon.png"
                   alt=""
                 />
                 <img
-                  className="max-w-[90px] md:max-w-full"
+                  className="max-w-[90px] border-2 rounded-full shadow-lg p-5"
                   src="./images/icons/redux-icon.png"
                   alt=""
                 />
@@ -118,14 +118,14 @@ const MyPortfolio = () => {
         </div>
 
         <div className="services relative py-5">
-          <h1 className="gradient-text text-[2.2rem] pb-2">Service!</h1>
+          <h1 className="gradient-text text-[2.2rem] pb-2">Service</h1>
 
           <BsArrowRightCircle
-            className="right-arrow cursor-pointer absolute text-black text-[34px] lg:right-[17.5rem] right-0 md:top-[22rem] top-[15rem] rounded-2xl bg-white border-none"
+            className="right-arrow cursor-pointer absolute text-black text-[34px] lg:right-[17.5rem] right-0 md:top-[18rem] top-[13rem] rounded-2xl bg-white border-none"
             onClick={() => nextSlide()}
           />
           <BsArrowLeftCircle
-            className="left-arrow cursor-pointer absolute  text-black text-[34px] lg:left-[17.5rem] md:top-[22rem] top-[15rem] bg-white rounded-2xl border-none"
+            className="left-arrow cursor-pointer absolute  text-black text-[34px] lg:left-[17.5rem] md:top-[18rem] top-[13rem] bg-white rounded-2xl border-none"
             onClick={() => prevSlide()}
           />
           <div className="flex justify-center items-center snap-x snap-mandatory scroll-smooth">
@@ -134,7 +134,7 @@ const MyPortfolio = () => {
                 <div
                   className={
                     currentSlideIndex === parseInt(item.id)
-                      ? "max-w-[700px] max-h-[600px] border-1 shadow-slate-200 shadow-lg rounded-2xl transition-all ease-in-out active"
+                      ? "max-w-[590px] max-h-[600px] border-1 shadow-slate-200 shadow-lg rounded-2xl transition-all ease-in-out active"
                       : "hidden"
                   }
                   key={item.id}
@@ -152,8 +152,8 @@ const MyPortfolio = () => {
               <button
                 className={
                   currentSlideIndex === index
-                    ? "indicator rounded-lg h-3 p-2 bg-orange-400 border-none shadow-2xl"
-                    : "indicator rounded-lg h-3 p-2 border-none shadow-2xl bg-slate-950"
+                    ? "indicator rounded-full h-3 p-2 bg-orange-400 border-none shadow-lg"
+                    : "indicator rounded-full h-3 p-2 border-none shadow-lg bg-slate-950"
                 }
                 key={index}
                 onClick={() => setcurrentSlideindex(index)}
