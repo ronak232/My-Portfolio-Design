@@ -5,7 +5,8 @@ import data from "../data/data.json";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 
 const MyPortfolio = () => {
-  const [currentSlideIndex, setcurrentSlideindex] = useState(0);
+  const [currentSlideIndex, setCurrentSlideindex] = useState(0);
+  const [isAutoPlayOn, setisAutoPlayOn] = useState(false);
 
   const revealText = useRef(null);
   const imageSlideIn = useRef(null);
@@ -36,21 +37,32 @@ const MyPortfolio = () => {
   // Previous silde
   const prevSlide = () => {
     if (currentSlideIndex > 0) {
-      setcurrentSlideindex(currentSlideIndex - 1);
+      setCurrentSlideindex(currentSlideIndex - 1);
     } else {
-      setcurrentSlideindex(data.services.length - 1);
+      setCurrentSlideindex(data.services.length - 1);
     }
   };
 
   // Next slide
   const nextSlide = () => {
     if (currentSlideIndex === data.services.length - 1) {
-      setcurrentSlideindex(0);
+      setCurrentSlideindex(0);
       console.log(currentSlideIndex);
     } else {
-      setcurrentSlideindex(currentSlideIndex + 1);
+      setCurrentSlideindex(currentSlideIndex + 1);
     }
   };
+
+  useEffect(() => {
+    const autoplayInterval = setInterval(() => {
+      if (currentSlideIndex === data.services.length - 1) {
+        return setCurrentSlideindex(0);
+      } else {
+        setCurrentSlideindex(currentSlideIndex + 1);
+      }
+    }, 3000);
+    return () => clearInterval(autoplayInterval);
+  }, [currentSlideIndex]);
 
   return (
     <div className="portfolio py-16 h-full">
@@ -78,7 +90,10 @@ const MyPortfolio = () => {
             realm.
           </p>
           <div className="tech-stack w-full overflow-hidden">
-            <div ref={imageSlideIn} className="flex flex-col -translate-y-[500px] opacity-0">
+            <div
+              ref={imageSlideIn}
+              className="flex flex-col -translate-y-[500px] opacity-0"
+            >
               <div className="flex justify-between items-center w-full p-2">
                 <img
                   className="max-w-[90px] border-2 rounded-full shadow-lg p-5"
@@ -128,7 +143,7 @@ const MyPortfolio = () => {
             className="left-arrow cursor-pointer absolute  text-black text-[34px] lg:left-[17.5rem] md:top-[18rem] top-[13rem] bg-white rounded-2xl border-none"
             onClick={() => prevSlide()}
           />
-          <div className="flex justify-center items-center snap-x snap-mandatory scroll-smooth">
+          <div className="flex justify-center items-center transition ease-in-out delay-650">
             {data.services.map((item) => {
               return (
                 <div
@@ -156,7 +171,7 @@ const MyPortfolio = () => {
                     : "indicator rounded-full h-3 p-2 border-none shadow-lg bg-slate-950"
                 }
                 key={index}
-                onClick={() => setcurrentSlideindex(index)}
+                onClick={() => setCurrentSlideindex(index)}
               ></button>
             );
           })}
