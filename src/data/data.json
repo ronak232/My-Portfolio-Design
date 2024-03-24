@@ -36,13 +36,13 @@
   "portfolio": [
     {
       "id": "0",
-      "img": "https://www.blurb.com/blog/wp-content/uploads/2019/03/20190104_JanBlog_1920x1080_v1-header.jpg",
+      "img": "https://i.postimg.cc/T3pgXjM1/sample2.png",
       "link": "https://github.com/ronak232/Ecommerce-app",
       "desc": "E-comm Website"
     },
     {
       "id": "1",
-      "img": "https://miro.medium.com/v2/resize:fit:1400/1*tIgqtf63Uto2pju937DVTA.jpeg",
+      "img": "https://i.postimg.cc/rmcDzxbS/sample1.png",
       "link":"https://github.com/ronak232/bootstrap-react-app",
       "desc": "Any Website"
     },

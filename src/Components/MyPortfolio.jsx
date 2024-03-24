@@ -53,6 +53,7 @@ const MyPortfolio = () => {
     }
   };
 
+  // Autoplay slider...
   useEffect(() => {
     const autoplayInterval = setInterval(() => {
       if (currentSlideIndex === data.services.length - 1) {
