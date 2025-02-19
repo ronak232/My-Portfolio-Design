@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import data from "../data/data.json";
@@ -6,7 +6,7 @@ import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 
 const MyPortfolio = () => {
   const [currentSlideIndex, setCurrentSlideindex] = useState(0);
-  const [isAutoPlayOn, setisAutoPlayOn] = useState(false);
+  // const [isAutoPlayOn, setisAutoPlayOn] = useState(false);
 
   const revealText = useRef(null);
   const imageSlideIn = useRef(null);
@@ -79,7 +79,7 @@ const MyPortfolio = () => {
           >
             Welcome to my portfolio!
             <span className="text-[1.5rem] text-cyan-700 ps-1 font-basic">
-              I'm Ronak Mathur
+              I&apos;m Ronak Mathur
             </span>
             , a passionate frontend developer dedicated to crafting exceptional
             user experiences through clean, efficient, and visually appealing
@@ -181,10 +181,13 @@ const MyPortfolio = () => {
         {/* Work */}
         <div className="work mt-5">
           <h1 className="gradient-text py-7 text-[2.2rem]">Portfolio</h1>
-          <div className="flex justify-between md:flex-nowrap flex-wrap m-auto gap-6 sm:gap-4">
-            {data.portfolio.map((item) => {
+          <div className="flex justify-between md:flex-wrap flex-wrap m-auto gap-6 sm:gap-4">
+            {data.portfolio.map((item, index) => {
               return (
-                <div className="flex flex-col border-1 shadow-lg shadow-slate-300 rounded-2xl max-h-[460px] gap-4">
+                <div
+                  key={index}
+                  className="flex flex-col border-1 shadow-lg shadow-slate-300 rounded-2xl max-h-[460px] gap-2"
+                >
                   <div className="first h-full w-full max-w-[350px] max-h-[480px] cursor-pointer">
                     <img
                       className="w-full border-b-100 h-full"
@@ -192,11 +195,12 @@ const MyPortfolio = () => {
                       alt=""
                     />
                   </div>
+                  <p className="p-2">{item.desc}</p>
                   <a
-                    className="p-2 bg-teal-100 max-w-[140px] m-3 rounded-xl"
+                    className="p-2 bg-teal-600 max-w-[140px] m-3 rounded-xl"
                     href={item.link}
                   >
-                    View on{" "}
+                    View on
                     <img
                       className="inline-block"
                       src="./images/github-dark.svg"

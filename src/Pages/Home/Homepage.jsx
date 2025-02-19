@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const Homepage = () => {
@@ -39,7 +39,7 @@ const Homepage = () => {
             >
               Hello!
               <span className="font-bold text-green-400 text-[1.2rem] md:text-[3rem] ps-2">
-                I'm Ronak Mathur
+                I&apos;m Ronak Mathur
               </span>
             </h1>
           </div>

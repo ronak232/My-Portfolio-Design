@@ -1,6 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 import SiderbarMenu from "./Sidebar/SiderbarMenu";
+import { DarkMode } from "./DarkMode/DarkMode";
 // import Logo from "../assets/"
 
 function Navbar() {
@@ -32,6 +32,7 @@ function Navbar() {
               <li>Contact Me</li>
             </a>
           </ul>
+          <DarkMode/>
         </div>
       </nav>
     </>

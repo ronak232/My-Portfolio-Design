@@ -1,12 +1,31 @@
+.theme-dark {
+  --dark-text: #ffffff;
+  --light-text: #d9d9d9;  
+  --dark-background: #000000;
+  --light-background: #1c1c1c;
+  --accent: #B8DBD9;
+  --button-border: #B8DBD9;
+}
+
+.theme-light {
+  --dark-text: #000000;
+  --light-text: #5E4B56;
+  --dark-background: #DBE7E4;
+  --light-background: #ffffff;
+  --accent: #DBE7E4;
+  --button-border: #5E4B56;
+}
+
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth !important;
+  background-color: var(--dark-background);
+  color: var(--dark-text);
 }
 
 body {
-  background: #0000;
-  color: whitesmoke;
-  scroll-behavior: smooth !important;
+  background-color: var(--light-background);
+  color: var(--dark-text);
 }
 
 * {

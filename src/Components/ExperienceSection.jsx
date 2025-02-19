@@ -1,5 +1,3 @@
-import React, { useRef, useEffect, useState, useLayoutEffect } from "react";
-
 const ExperienceSection = () => {
   return (
     <div className="exp-banner py-[4rem]">

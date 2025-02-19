@@ -43,7 +43,7 @@
     {
       "id": "1",
       "img": "https://i.postimg.cc/rmcDzxbS/sample1.png",
-      "link":"https://github.com/ronak232/bootstrap-react-app",
+      "link": "https://github.com/ronak232/bootstrap-react-app",
       "desc": "Any Website"
     },
     {
@@ -51,6 +51,12 @@
       "img": "https://miro.medium.com/v2/resize:fit:1400/1*bU3ELlwhoUWYDshTEMhuKQ.jpeg",
       "link": "https://github.com/ronak232/Small-React-Projects",
       "desc": "My Small React Js Projects"
+    },
+    {
+      "id": "3",
+      "img": "https://www.e-translation-agency.com/wp-content/uploads/2024/07/AI-and-humanTranslation-1.webp",
+      "link": "https://github.com/ronak232/Small-React-Projects",
+      "desc": "Lingo-Panel A text translation"
     }
   ]
 }
