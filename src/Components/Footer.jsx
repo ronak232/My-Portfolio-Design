@@ -1,61 +1,45 @@
-import React from "react";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const PortfolioFooter = () => {
+const Footer = () => {
+  const socialLinks = [
+    {
+      name: 'GitHub',
+      icon: <FaGithub size={20} />,
+      url: 'https://github.com/ronak232',
+    },
+    {
+      name: 'LinkedIn',
+      icon: <FaLinkedin size={20} />,
+      url: 'https://www.linkedin.com/in/ronak-mathur-232/',
+    },
+  ];
+
   return (
-    <footer className="h-full p-[3.4rem] w-full bg-slate-700 text-white">
-      <div className="logo">
-        <img src="" alt="" />
-      </div>
-      <h1 className="sm:text-[3rem] text-[1.5rem] text-white text-center">
-        Just a Developer! 🧑‍💻
-      </h1>
-      <div className=" mt-6"></div>
-      <div></div>
-      <div className="social-icons flex items-center md:justify-between justify-center w-full flex-col md:flex-row py-6 md:items-center">
-          <p className="date text-[1rem]">Created in 2024</p>
-          <div className="flex gap-3">
-            <a href="#">
-              <img
-                className="object-cover w-100"
-                src="./images/meta.svg"
-                alt=""
-                width={35}
-                height={35}
-              />
-            </a>
-            <a href="https://github.com/ronak232" target="_blank">
-              <img
-                className="object-cover w-100"
-                src="./images/github.svg"
-                alt=""
-                width={33}
-                height={33}
-              />
-            </a>
-            <a href="#">
-              <img
-                className="object-cover w-100"
-                src="./images/linkedin.svg"
-                alt=""
-                width={35}
-                height={35}
-              />
-            </a>
-            <a href="#">
-              <img
-                className="object-cover w-100"
-                src="./images/instagram.svg"
-                alt=""
-                width={35}
-                height={35}
-              />
-            </a>
-          {/* </div> */}
+    <footer className="border-t border-border bg-background">
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <p className="text-sm text-foreground/60">
+            &copy; {new Date().getFullYear()} Ronak Mathur. All rights reserved.
+          </p>
+          <div className="flex items-center gap-4">
+            {socialLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.name}
+                className="text-foreground/60 transition-colors hover:text-primary"
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="text-center pt-4">Made with ❤️ Ronak Mathur</div>
     </footer>
   );
 };
 
-export default PortfolioFooter;
+export default Footer;
+

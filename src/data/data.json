@@ -38,25 +38,33 @@
       "id": "0",
       "img": "https://i.postimg.cc/T3pgXjM1/sample2.png",
       "link": "https://github.com/ronak232/Ecommerce-app",
-      "desc": "E-comm Website"
+      "desc": "E-comm Website",
+      "description": "A full-featured e-commerce platform with a modern UI, product catalog, shopping cart, and checkout functionality.",
+      "tags": ["React", "Next.js", "Tailwind CSS", "MongoDB"]
     },
     {
       "id": "1",
       "img": "https://i.postimg.cc/rmcDzxbS/sample1.png",
       "link": "https://github.com/ronak232/bootstrap-react-app",
-      "desc": "Any Website"
+      "desc": "Any Website",
+      "description": "A responsive website template built with React and Bootstrap, suitable for a variety of business or personal projects.",
+      "tags": ["React", "Bootstrap"]
     },
     {
       "id": "2",
       "img": "https://miro.medium.com/v2/resize:fit:1400/1*bU3ELlwhoUWYDshTEMhuKQ.jpeg",
       "link": "https://github.com/ronak232/Small-React-Projects",
-      "desc": "My Small React Js Projects"
+      "desc": "My Small React Js Projects",
+      "description": "A collection of small but interesting projects built with React, showcasing various features and techniques.",
+      "tags": ["React", "JavaScript", "CSS"]
     },
     {
       "id": "3",
       "img": "https://www.e-translation-agency.com/wp-content/uploads/2024/07/AI-and-humanTranslation-1.webp",
       "link": "https://github.com/ronak232/Small-React-Projects",
-      "desc": "Lingo-Panel A text translation"
+      "desc": "Lingo-Panel A text translation",
+      "description": "A web-based text translation tool powered by AI, allowing users to translate text between multiple languages.",
+      "tags": ["React", "AI", "Gemini API"]
     }
   ]
 }

@@ -1,91 +1,75 @@
+import { motion } from 'framer-motion';
+
+const experienceData = [
+  {
+    date: '2022 - Present',
+    role: 'Frontend Developer',
+    company: 'Innovatech Solutions',
+    description: [
+      'Developed and maintained responsive web applications using React and Next.js, resulting in a 30% increase in user engagement.',
+      'Collaborated with designers and backend developers to implement new features and improve existing ones.',
+      'Optimized application performance, reducing load times by 20% and improving overall user satisfaction.',
+    ],
+  },
+  // Add more experience objects here
+];
+
 const ExperienceSection = () => {
   return (
-    <div className="exp-banner py-[4rem]">
-      <div className="container h-full">
-        <div className="flex flex-col">
-          <h1 className="gradient-text md:text-5xl text-3xl font-semibold">
-            Experience
-          </h1>
+    <section id="experience" className="py-20 sm:py-32">
+      <div className="container mx-auto px-4">
+        <h2 className="text-center font-sora text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          Work Experience
+        </h2>
+        <p className="mt-4 text-center text-lg text-foreground/60">
+          My professional journey and key accomplishments.
+        </p>
 
-          <p className="text-gray-800 py-4 font-normal font-basic">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptates, eius aspernatur et aperiam recusandae adipisci quis
-            dolores sint assumenda cumque praesentium? Eius quam iure rem
-            necessitatibus dignissimos aliquam accusantium quos!
-          </p>
-          <div className="flex gap-4 flex-wrap md:flex-nowrap w-full text-black">
-            <div className="max-w-[400px] justify-center w-full">
-              <div className="flex flex-col gap-5 bg-white py-5 rounded-xl shadow-cs cursor-pointer border p-4">
-                <img
-                  className=""
-                  width={20}
-                  height={20}
-                  src="./images/career-icon.png"
-                  alt=""
-                />
-                <p className="">2022 - Present</p>
-                <h1 className="text-n-5 font-semibold text-[1.9rem]">
-                  Frontend Developer
-                </h1>
-                <ul>
-                  <li className="leading-[1.3rem] text-[1rem]  font-basic font-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Architecto, omnis officiis ad autem nobis ducimus.
-                  </li>
-                </ul>
-                <p className="font-basic font-light">Tech Stack</p>
-                <div className="flex justify-between items-center w-full p-2">
-                  <div className="border-0 rounded-full shadow-cs p-2">
-                    <img
-                      className="max-w-[30px]"
-                      src="./images/icons/css-icon.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="border-0 rounded-full shadow-cs p-2">
-                    <img
-                      className="max-w-[30px]"
-                      src="./images/icons/html-icon.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="border-0 rounded-full shadow-cs p-2">
-                    <img
-                      className="max-w-[30px]"
-                      src="./images/icons/js-icon.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="border-0 rounded-full shadow-cs p-2">
-                    <img
-                      className="max-w-[30px]"
-                      src="./images/icons/react-icon.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="border-0 rounded-full shadow-cs p-2">
-                    <img
-                      className="max-w-[30px]"
-                      src="./images/icons/sass-icon.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="border-0 rounded-full shadow-cs p-2">
-                    <img
-                      className="max-w-[30px]"
-                      src="./images/icons/git-icon.png"
-                      alt=""
-                    />
-                  </div>
+        <div className="relative mt-16">
+          <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border"></div>
+
+          {experienceData.map((item, index) => (
+            <motion.div
+              key={index}
+              className="relative mb-12 flex w-full items-center justify-between"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
+              <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8'}`}>
+                {/* Empty div for spacing */}
+              </div>
+
+              <div className="absolute left-1/2 z-10 -translate-x-1/2 transform">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                  <div className="h-3 w-3 rounded-full bg-primary-foreground"></div>
                 </div>
               </div>
-            </div>
-          </div>
+
+              <div className={`w-5/12 ${index % 2 === 0 ? 'pl-8' : 'pr-8 text-right'}`}>
+                <div className={`rounded-lg bg-card p-6 shadow-lg ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
+                  <p className="text-sm font-semibold text-primary">{item.date}</p>
+                  <h3 className="mt-1 font-sora text-xl font-bold text-card-foreground">
+                    {item.role}
+                  </h3>
+                  <p className="text-md mt-1 font-medium text-card-foreground/80">
+                    {item.company}
+                  </p>
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-left text-card-foreground/60">
+                    {item.description.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
-      <div></div>
-    </div>
+    </section>
   );
 };
 
 export default ExperienceSection;
+

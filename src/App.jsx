@@ -1,24 +1,22 @@
-import { useEffect } from "react";
 import "./App.css";
 import ExperienceSection from "./Components/ExperienceSection";
-import PortfolioFooter from "./Components/Footer";
-import MyPortfolio from "./Components/MyPortfolio";
+import Footer from "./Components/Footer";
+import Projects from "./Components/Projects";
 import Navbar from "./Components/Navbar";
-import Homepage from "./Pages/Home/Homepage";
-import { keepTheme } from "./utils/darkModeSwitch";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
 
 function App() {
-  useEffect(() => {
-    keepTheme();
-  }, []);
-
   return (
     <>
       <Navbar />
-      <Homepage />
-      <MyPortfolio />
+      <Hero />
+      <About />
+      <Projects />
       <ExperienceSection />
-      <PortfolioFooter />
+      <Contact />
+      <Footer />
     </>
   );
 }
