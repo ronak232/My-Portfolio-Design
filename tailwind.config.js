@@ -56,7 +56,11 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
         sora: ["var(--font-sora)", "sans-serif"],
-        
+        leckerli: ["var(--font-roboto)", "cursive"],
+        noto: ["var(--font-noto)", "sans-serif"],
+        notoSerif: ["var(--font-noto-serif)", "serif"],
+        playfair: ["var(--font-playfair)", "serif"],
+        sansita: ["var(--font-sansita)", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
@@ -81,4 +85,3 @@ module.exports = {
     require("tailwind-scrollbar"),
   ],
 };
-

@@ -3,7 +3,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 sm:py-32">
+    <section id="contact" className="py-20 md:py-10">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="font-sora text-3xl font-bold tracking-tight text-foreground sm:text-4xl">

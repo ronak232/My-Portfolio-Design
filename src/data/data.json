@@ -16,55 +16,56 @@
       "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do temporincididuntut Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,"
     }
   ],
-  "services": [
-    {
-      "id": "0",
-      "img": "https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=996&t=st=1710350665~exp=1710351265~hmac=d434b93072b7ef473ffa18057a63c3304a44554c3a819797064edd35526c64b5",
-      "des": "Architecting the web's future, pixel by pixel, with passion and precision."
-    },
-    {
-      "id": "1",
-      "img": "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051555.jpg?w=996&t=st=1710350822~exp=1710351422~hmac=de79e90bef00db9cc1687d0211b2cebec6c9f03416b773d41103d671e78c247e",
-      "des": "Transforming designs into seamless user experiences with expert UI development."
-    },
-    {
-      "id": "2",
-      "img": "https://uploads-ssl.webflow.com/615af81f65d1ab72d2969269/62efdf9840dca733692cdd48_web%20dev%20basics.jpg",
-      "des": "Crafting captivating websites and intuitive UI designs for engaging user experiences"
-    }
-  ],
   "portfolio": [
     {
-      "id": "0",
+      "id": "1",
       "img": "https://i.postimg.cc/T3pgXjM1/sample2.png",
       "link": "https://github.com/ronak232/Ecommerce-app",
       "desc": "E-comm Website",
       "description": "A full-featured e-commerce platform with a modern UI, product catalog, shopping cart, and checkout functionality.",
       "tags": ["React", "Next.js", "Tailwind CSS", "MongoDB"]
     },
-    {
-      "id": "1",
-      "img": "https://i.postimg.cc/rmcDzxbS/sample1.png",
-      "link": "https://github.com/ronak232/bootstrap-react-app",
-      "desc": "Any Website",
-      "description": "A responsive website template built with React and Bootstrap, suitable for a variety of business or personal projects.",
-      "tags": ["React", "Bootstrap"]
-    },
+
     {
       "id": "2",
-      "img": "https://miro.medium.com/v2/resize:fit:1400/1*bU3ELlwhoUWYDshTEMhuKQ.jpeg",
-      "link": "https://github.com/ronak232/Small-React-Projects",
-      "desc": "My Small React Js Projects",
-      "description": "A collection of small but interesting projects built with React, showcasing various features and techniques.",
-      "tags": ["React", "JavaScript", "CSS"]
+      "img": "https://res.cloudinary.com/dwc1sjsvj/image/upload/v1749965202/mhwi167l356xa1f0uefx.png",
+      "link": "https://github.com/ronak232/LingoPanel-AI-text-translation-chrome-extension.git",
+      "desc": "LingoPanel-AI-text-translation-chrome-extension",
+      "description": "A web-based text translation tool powered by AI, allowing users to translate text between multiple languages.",
+      "tags": ["React", "AI", "Gemini API"]
     },
     {
       "id": "3",
-      "img": "https://www.e-translation-agency.com/wp-content/uploads/2024/07/AI-and-humanTranslation-1.webp",
-      "link": "https://github.com/ronak232/Small-React-Projects",
-      "desc": "Lingo-Panel A text translation",
-      "description": "A web-based text translation tool powered by AI, allowing users to translate text between multiple languages.",
-      "tags": ["React", "AI", "Gemini API"]
+      "img": "https://res.cloudinary.com/dwc1sjsvj/image/upload/v1749965490/nqupx3lxrbu2eycm2owj.png",
+      "link": "https://github.com/ronak232/AI-Doc-Summary-Groq.git",
+      "desc": "Groq-Based Smart Reader",
+      "description": "A collection of small but interesting projects built with React, showcasing various features and techniques.",
+      "tags": [
+        "React",
+        "JavaScript",
+        "CSS",
+        "Node.js",
+        "MongoDB",
+        "Gemini API",
+        "LLM"
+      ]
+    },
+    {
+      "id": "4",
+      "img": "https://res.cloudinary.com/dwc1sjsvj/image/upload/v1749964770/tmccq9eibnngrhw7jrwc.png",
+      "link": "https://github.com/ronak232/PostPal-Intelligent-Photo-Selector.git",
+      "desc": "PostPal: AI Smart Photo Selector",
+      "description": "A collection of small but interesting projects built with React, showcasing various features and techniques.",
+      "tags": [
+        "React",
+        "JavaScript",
+        "CSS",
+        "Node.js",
+        "MongoDB",
+        "Gemini API",
+        "LLM",
+        "AI"
+      ]
     }
   ]
 }

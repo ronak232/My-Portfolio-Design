@@ -28,7 +28,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 100);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -36,9 +36,17 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-md" : "bg-transparent"}`}>
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-background/80 backdrop-blur-md" : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link to="hero" smooth={true} duration={500} className="text-2xl font-bold font-sora cursor-pointer">
+        <Link
+          to="hero"
+          smooth={true}
+          duration={500}
+          className="text-2xl font-bold font-sora cursor-pointer"
+        >
           RM
         </Link>
 
@@ -51,7 +59,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               offset={-50}
-              className="cursor-pointer text-sm font-medium text-foreground/70 transition-colors hover:text-foreground"
+              className="cursor-pointer text-lg font-semibold text-foreground/90 transition-colors hover:text-foreground"
             >
               {item.label}
             </Link>
@@ -67,7 +75,13 @@ const Navbar = () => {
             )}
           </button>
           {socialLinks.map((link) => (
-            <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="p-2">
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2"
+            >
               {link.icon}
             </a>
           ))}
@@ -75,7 +89,11 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button className="p-2 md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
+          {isOpen ? (
+            <FiX className="h-6 w-6" />
+          ) : (
+            <FiMenu className="h-6 w-6" />
+          )}
         </button>
       </div>
 
@@ -90,7 +108,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 offset={-50}
-                className="cursor-pointer text-sm font-medium text-foreground/70 transition-colors hover:text-foreground"
+                className="cursor-pointer text-lg font-medium text-foreground/70 transition-colors hover:text-foreground"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
@@ -99,7 +117,13 @@ const Navbar = () => {
             <div className="mt-4 flex items-center justify-between border-t border-border pt-4">
               <div className="flex gap-4">
                 {socialLinks.map((link) => (
-                  <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="p-2">
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2"
+                  >
                     {link.icon}
                   </a>
                 ))}
