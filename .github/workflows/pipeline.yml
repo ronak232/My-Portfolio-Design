@@ -1,0 +1,44 @@
+name: Portfolio App  #Workflow name
+
+on:
+  workflow_dispatch:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - master #trigger this workflow
+
+  # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build-and-deploy-react:
+    runs-on: ubuntu-latest
+
+    steps:
+      #checkout to repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      #setup node.js
+      - name: Setup node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      #install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      #Build project
+      - name: Build React App
+        run: npm run build
+
+      # Project Deploy
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.TOKEN }}
