@@ -1,4 +1,4 @@
-name: Portfolio App  #Workflow name
+name: Portfolio App #Workflow name
 
 on:
   workflow_dispatch:
@@ -40,5 +40,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: ./dist
           token: ${{ secrets.TOKEN }}
