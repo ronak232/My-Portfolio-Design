@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-secondary/80 backdrop-blur-md" : "bg-[#00000085] text-white"
+        isScrolled ? "bg-secondary/80 backdrop-blur-md" : "bg-[#00000085] text-[#C890A7]"
       }`}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
@@ -59,7 +59,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               offset={-50}
-              className="cursor-pointer text-lg font-semibold text-white/90 transition-colors hover:text-white"
+              className="cursor-pointer text-lg font-semibold text-[#C890A7] transition-colors"
             >
               {item.label}
             </Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 offset={-50}
-                className="cursor-pointer text-lg font-medium text-foreground/70 transition-colors hover:text-foreground"
+                className="cursor-pointer text-lg font-medium text-[#C890A7] transition-colors hover:text-foreground"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
