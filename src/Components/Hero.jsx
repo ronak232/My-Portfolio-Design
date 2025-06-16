@@ -4,13 +4,23 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center text-white"
+      className="relative flex min-h-screen items-center text-white overflow-hidden"
     >
+      {/* Mobile Background */}
       <div className="absolute inset-0 blur-sm">
         <img
-          src="https://res.cloudinary.com/dwc1sjsvj/image/upload/v1749987370/uryrunqycqimwrhj9syb.png"
+          src="https://res.cloudinary.com/dwc1sjsvj/image/upload/v1750052100/ugdds2wtyhqkjuiyzrmx.png"
           alt="background"
-          className="h-full w-full object-cover"
+          className="block md:hidden w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Desktop Background */}
+      <div className="absolute inset-0 blur-sm">
+        <img
+          src="https://res.cloudinary.com/dwc1sjsvj/image/upload/v1750052100/np0hlxdquxxutzq7nqlp.png"
+          alt="background"
+          className="hidden md:block w-full h-full object-cover"
         />
       </div>
       <div className="relative z-10 container mx-auto max-w-4xl px-4 text-center sm:text-left">
