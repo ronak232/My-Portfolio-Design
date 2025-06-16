@@ -10,7 +10,7 @@ const Footer = () => {
     {
       name: 'LinkedIn',
       icon: <FaLinkedin size={20} />,
-      url: 'https://www.linkedin.com/in/ronak-mathur-232/',
+      url: 'https://www.linkedin.com/in/ronak-mathur-232000',
     },
   ];
 

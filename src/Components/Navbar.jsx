@@ -21,7 +21,7 @@ const Navbar = () => {
       icon: <FaGithub className="h-5 w-5" />,
     },
     {
-      href: "https://www.linkedin.com/in/ronak-mathur-232001/",
+      href: "https://linkedin.com/in/ronak-mathur-232000",
       icon: <FaLinkedin className="h-5 w-5" />,
     },
   ];
