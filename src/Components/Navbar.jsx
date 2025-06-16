@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-md" : "bg-transparent"
+        isScrolled ? "bg-secondary/80 backdrop-blur-md" : "bg-[#00000085] text-white"
       }`}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
@@ -59,7 +59,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               offset={-50}
-              className="cursor-pointer text-lg font-semibold text-foreground/90 transition-colors hover:text-foreground"
+              className="cursor-pointer text-lg font-semibold text-white/90 transition-colors hover:text-white"
             >
               {item.label}
             </Link>

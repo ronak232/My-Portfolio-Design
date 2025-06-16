@@ -16,7 +16,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-15 md:py-10">
+    <section id="about" className="md:py-10 py-10">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="font-sora text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
@@ -27,18 +27,18 @@ const About = () => {
             <span className="text-cyan-400 font-semibold">Ronak Mathur</span>, a
             passionate <span className="font-medium">Frontend Developer</span>{" "}
             who transforms complex ideas into elegant, performant, and
-            responsive user experiences. With over{" "}
+            responsive user experiences. With{" "}
             <span className="font-medium">
-              2+ years of professional experience
+              around 2 years of professional experience
             </span>
-            , I&apos;ve worked on real-world web applications at scale — improving
-            performance, refining UI/UX, and optimizing accessibility across
-            devices.
+            , I&apos;ve worked on real-world web applications at scale —
+            improving performance, refining UI/UX, and optimizing accessibility
+            across devices.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-foreground/70">
             I specialize in technologies like{" "}
             <span className="text-cyan-400 font-semibold">
-              React, Tailwind CSS, SCSS, JavaScript
+              HTML, CSS, React, Tailwind CSS, SCSS, JavaScript
             </span>
             , and love bringing designs to life with pixel precision using tools
             like <span className="font-semibold">Figma</span>. I’m also actively
@@ -50,11 +50,11 @@ const About = () => {
             content.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-foreground/70">
-            Whether it&apos;s collaborating in agile teams, integrating RESTful APIs,
-            or deploying code via Azure DevOps, I thrive in fast-paced
-            environments that demand both creativity and performance. I&apos;m always
-            curious, constantly learning, and eager to solve real-world problems
-            through code.
+            Whether it&apos;s collaborating in agile teams, integrating RESTful
+            APIs, or deploying code via Azure DevOps, I thrive in fast-paced
+            environments that demand both creativity and performance. I&apos;m
+            always curious, constantly learning, and eager to solve real-world
+            problems through code.
           </p>
         </div>
 
