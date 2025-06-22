@@ -39,7 +39,7 @@
       "img": "https://res.cloudinary.com/dwc1sjsvj/image/upload/v1749965490/nqupx3lxrbu2eycm2owj.png",
       "link": "https://github.com/ronak232/AI-Doc-Summary-Groq.git",
       "desc": "Groq-Based Smart Reader",
-      "description": "A collection of small but interesting projects built with React, showcasing various features and techniques.",
+      "description": "Groq-Based Smart Reader is a lightning-fast AI assistant that reads, analyzes, and summarizes documents in real time. Powered by Groq’s LPUs, it offers ultra-low latency, supports multimodal inputs, and delivers smart, contextual insights instantly for any content.",
       "tags": [
         "React",
         "JavaScript",
@@ -56,6 +56,23 @@
       "link": "https://ronak232.github.io/PostPal-Intelligent-Photo-Selector/",
       "desc": "PostPal: AI Smart Photo Selector",
       "description": "Developed an AI-powered photo recommendation web app that helps users automatically identify and select the best-quality images from their uploads using the Google Gemini API. The app analyzes each image based on visual clarity, composition, and context to provide smart photo suggestions, solving the common problem of manually sorting through large photo collections—a task often faced by content creators, marketers, and everyday users. Built with React, Node.js, and Express, it features a responsive, mobile-first UI using Tailwind CSS and Material UI, with drag-and-drop uploads for ease of use. Implemented secure Google OAuth 2.0 authentication, integrated Cloudinary for cloud-based image storage, and used Sharp for server-side image compression and optimization. Also configured a CI/CD pipeline using GitHub Actions to automate build, test, and deployment workflows.",
+      "tags": [
+        "React",
+        "JavaScript",
+        "CSS",
+        "Node.js",
+        "MongoDB",
+        "Gemini API",
+        "LLM",
+        "AI"
+      ]
+    },
+     {
+      "id": "5",
+      "img": "",
+      "link": "https://github.com/ronak232/machine-coding-practice",
+      "desc": "Repository is dedicated to practicing and improving machine coding skills.",
+      "description": "A collection of coding problems and solutions for practicing machine coding and interview preparation."
       "tags": [
         "React",
         "JavaScript",
