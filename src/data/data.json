@@ -55,7 +55,7 @@
       "img": "https://res.cloudinary.com/dwc1sjsvj/image/upload/v1749964770/tmccq9eibnngrhw7jrwc.png",
       "link": "https://ronak232.github.io/PostPal-Intelligent-Photo-Selector/",
       "desc": "PostPal: AI Smart Photo Selector",
-      "description": "Developed an AI-powered photo recommendation web app that helps users automatically identify and select the best-quality images from their uploads using the Google Gemini API. The app analyzes each image based on visual clarity, composition, and context to provide smart photo suggestions, solving the common problem of manually sorting through large photo collections—a task often faced by content creators, marketers, and everyday users. Built with React, Node.js, and Express, it features a responsive, mobile-first UI using Tailwind CSS and Material UI, with drag-and-drop uploads for ease of use. Implemented secure Google OAuth 2.0 authentication, integrated Cloudinary for cloud-based image storage, and used Sharp for server-side image compression and optimization. Also configured a CI/CD pipeline using GitHub Actions to automate build, test, and deployment workflows.",
+      "description": "AI-powered web app that recommends the best-quality photos from user uploads by analyzing clarity, composition, and context using the Google Gemini API. Built with React, Node.js, and Express, it features secure Google OAuth, drag-and-drop uploads, cloud storage, and automated CI/CD.",
       "tags": [
         "React",
         "JavaScript",
